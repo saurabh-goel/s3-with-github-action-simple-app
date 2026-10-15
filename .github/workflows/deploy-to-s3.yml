@@ -28,3 +28,6 @@ jobs:
         
         - name: Upload built site to S3
           run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
+        - name: Set index.html to revalidate
+          run: aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET_NAME }}/index.html --cache-control "no-cache, no-store, must-revalidate" --content-type "text/html"
