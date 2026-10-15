@@ -37,7 +37,7 @@ function App() {
           <section className="hero">
             <div className="hero-copy">
               <p className="eyebrow"><span className="eyebrow-line" /> Independent creative studio · Est. 2018</p>
-              <h1>Make next<br />move <em>matter.</em></h1>
+              <h1>Make next<br />move <em>matters.</em></h1>
               <p className="hero-intro">We help ambitious teams build brands and digital experiences that move business forward.</p>
               <div className="hero-actions"><a className="button button-dark" href={goTo('Services')}>Explore what we do <span>↗</span></a><a className="text-link" href={goTo('About')}>Get to know us <span>→</span></a></div>
               <div className="hero-note"><span className="note-avatar">N</span><span>Small team. Big-picture thinking.<br /><strong>Based everywhere, working anywhere.</strong></span></div>
